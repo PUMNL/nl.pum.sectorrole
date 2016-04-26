@@ -3,6 +3,15 @@
 require_once 'sectorrole.civix.php';
 
 /**
+ * Implements hook_civicrm_buildForm().
+ *
+ * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_buidForm
+ */
+function sectorrole_civicrm_buildForm($formName, &$form) {
+  CRM_Sectorrole_SectorRole::buildForm($formName, $form);
+}
+
+/**
  * Implements hook_civicrm_config().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_config
